@@ -49,9 +49,9 @@ GET_TRACKERS() {
     if [[ -z "${CUSTOM_TRACKER_URL}" ]]; then
         echo && echo -e "$(DATE_TIME) ${INFO} Get BT trackers..."
         TRACKER=$(
-            ${DOWNLOADER} https://trackerslist.com/all_aria2.txt ||
+            ${DOWNLOADER} https://raw.githubusercontent.com/DeSireFire/animeTrackerList/master/ATaria2_all.txt ||
                 ${DOWNLOADER} https://raw.githubusercontent.com/DeSireFire/animeTrackerList/master/ATaria2_all.txt ||
-                ${DOWNLOADER} https://trackers.p3terx.com/all_aria2.txt ||
+                ${DOWNLOADER} https://raw.githubusercontent.com/DeSireFire/animeTrackerList/master/ATaria2_all.txt ||
 		${DOWNLOADER} https://raw.githubusercontent.com/DeSireFire/animeTrackerList/master/ATaria2_all.txt 
         )
     else
