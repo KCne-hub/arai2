@@ -1,4 +1,4 @@
-cache="/mnt/data/ttnode"
+cache="/data1"
 case $1 in
     -c=*|--cache=*)
     cache="${1#*=}"
