@@ -28,7 +28,7 @@ jq_file="${file}/jq"
 [[ ! -e ${jq_file} ]] && jq_file="/usr/bin/jq"
 region_json="${file}/region.json"
 
-github_prefix="https://raw.staticdn.net/CokeMine/ServerStatus-Hotaru/master"
+github_prefix="https://raw.githubusercontent.com/CokeMine/ServerStatus-Hotaru/master"
 coding_prefix="https://cokemine.coding.net/p/hotarunet/d/ServerStatus-Hotaru/git/raw/master"
 link_prefix=${github_prefix}
 
@@ -718,11 +718,11 @@ Modify_config_client() {
 }
 Install_jq() {
   [[ ${mirror_num} == 2 ]] && {
-    github_link="https://hub.fastgit.org"
-    raw_link="https://raw.fastgit.org"
+    github_link="https://hub.gitmirror.com"
+    raw_link="https://raw.gitmirror.com"
   } || {
     github_link="https://github.com"
-    raw_link="https://raw.staticdn.net"
+    raw_link="https://raw.githubusercontent.com"
   }
   if [[ ! -e ${jq_file} ]]; then
     if [[ ${bit} == "x86_64" ]]; then
