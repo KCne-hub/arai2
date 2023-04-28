@@ -1,4 +1,4 @@
-cache="/mnt/tt"
+cache="/mnt/sda1"
 case $1 in
     -c=*|--cache=*)
     cache="${1#*=}"
